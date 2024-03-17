@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Podatkovni model</title>
+</head>
+<body class="flex flex-col gap-4 px-24 py-4">
+<h1 class="text-3xl font-bold underline">
+    Podatkovni model
+</h1>
+
+
+<h2 class="text-xl font-bold">Sinhronizacija podatkov med napravo in strežnikom</h2>
+<p>Podatki o uporabnikih (uporabniško ime, e-pošta, nastavitve obveščanja) morajo biti shranjeni tako na strežniku kot
+    na napravi, da lahko aplikacija deluje tudi brez internetne povezave.
+    Obvestila o policijskih kontrolah in radarjih se lahko sinhronizirajo tako, da se posodobijo na napravi ob vsakem
+    zagonu aplikacije ali ob določenih intervalih, da se zagotovi ažurnost informacij.
+    Uporabniški prispevki se lahko sinhronizirajo na enak način kot obvestila o policijskih kontrolah in radarjih.
+    Spremembe v nastavitvah uporabnika (na primer dodajanje ali odstranjevanje radarjev) se morajo sinhronizirati med
+    napravo in strežnikom, ko uporabnik spremeni svoje nastavitve.
+</p>
+
+<h2 class="text-xl font-bold">Entitete</h2>
+<b>Uporabnik:</b>
+<ul>
+    <li>ID (primarni ključ)</li>
+    <li>Uporabniško ime</li>
+    <li>E-pošta</li>
+    <li>Geslo</li>
+    <li>Lokacija</li>
+    <li>Nastavitve obveščanja (npr. preferirane območje obveščanja, nastavitve zasebnosti)</li>
+</ul>
+
+<b>Obvestilo o policijski kontroli:</b>
+
+<ul>
+    <li>ID (primarni ključ)</li>
+    <li>Lokacija kontrole</li>
+    <li>Čas kontrole</li>
+    <li>Vrsta kontrole (npr. alkotest, hitrostna kontrola)</li>
+    <li>Opombe</li>
+    <li>Status (npr. potrjen, nedavno opažen)</li>
+</ul>
+
+
+<b>Radar</b>
+
+<ul>
+    <li>ID (primarni ključ)</li>
+    <li>Lokacija radarja</li>
+    <li>Vrsta radarja (npr. fiksni, mobilni)</li>
+    <li>Omejitev hitrosti</li>
+</ul>
+
+<b>Uporabniški prispevki</b>
+
+<ul>
+    <li>ID (primarni ključ)</li>
+    <li>Uporabnik (tuji ključ)</li>
+    <li>Lokacija opažanja</li>
+    <li>Čas opažanja</li>
+    <li>Vrsta opažanja (npr. policijska kontrola, radar)</li>
+    <li>Opombe</li>
+</ul>
+
+
+<h2 class="text-xl font-bold">ER - Diagram </h2>
+
+<img src="er.png" alt="kekec"/>
+</body>
+</html>

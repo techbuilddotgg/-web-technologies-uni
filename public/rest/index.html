@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>REST</title>
+</head>
+<body class="flex flex-col gap-4 px-24 py-4">
+<h1 class="text-3xl font-bold underline">REST</h1>
+
+<p>Da bi podprli delovanje hibridne namizne aplikacije, ki uporablja REST API za komunikacijo s strežnikom, bi morali
+    zagotoviti naslednji nabor storitev REST in metod:
+</p>
+
+
+<div class="p-4 bg-gray-100 rounded-lg">
+    <h2 class="text-lg font-semibold mb-4">Avtentikacija in avtorizacija:</h2>
+    <ul>
+        <li>
+            <span class="font-semibold">POST</span>
+            <span class="mr-2">/api/login</span>
+            <span>Uporabnik se prijavi v aplikacijo.</span>
+        </li>
+        <li>
+            <span class="font-semibold">POST</span>
+            <span class="mr-2">/api/logout</span>
+            <span>Uporabnik se odjavi iz aplikacije.</span>
+        </li>
+        <li>
+            <span class="font-semibold">POST</span>
+            <span class="mr-2">/api/register</span>
+            <span>Uporabnik se registrira v aplikacijo.</span>
+        </li>
+        <li>
+            <span class="font-semibold">GET</span>
+            <span class="mr-2">/api/user</span>
+            <span>Pridobi podatke o trenutno prijavljenem uporabniku.</span>
+        </li>
+        <li>
+            <span class="font-semibold">PUT</span>
+            <span class="mr-2">/api/user/:id</span>
+            <span>Posodobi podatke o uporabniku.</span>
+        </li>
+        <li>
+            <span class="font-semibold">DELETE</span>
+            <span class="mr-2">/api/user/:id</span>
+            <span>Izbriše uporabnika.</span>
+        </li>
+    </ul>
+</div>
+
+
+
+<div class="p-4 bg-gray-100 rounded-lg">
+    <h2 class="text-lg font-semibold mb-4">Avtentikacija in avtorizacija:</h2>
+    <ul>
+        <li>
+            <span class="font-semibold">POST</span>
+            <span class="mr-2">/api/login</span>
+            <span>Uporabnik se prijavi v aplikacijo.</span>
+        </li>
+        <li>
+            <span class="font-semibold">POST</span>
+            <span class="mr-2">/api/logout</span>
+            <span>Uporabnik se odjavi iz aplikacije.</span>
+        </li>
+        <li>
+            <span class="font-semibold">POST</span>
+            <span class="mr-2">/api/register</span>
+            <span>Uporabnik se registrira v aplikacijo.</span>
+        </li>
+        <li>
+            <span class="font-semibold">GET</span>
+            <span class="mr-2">/api/user</span>
+            <span>Pridobi podatke o trenutno prijavljenem uporabniku.</span>
+        </li>
+        <li>
+            <span class="font-semibold">PUT</span>
+            <span class="mr-2">/api/user/:id</span>
+            <span>Posodobi podatke o uporabniku.</span>
+        </li>
+        <li>
+            <span class="font-semibold">DELETE</span>
+            <span class="mr-2">/api/user/:id</span>
+            <span>Izbriše uporabnika.</span>
+        </li>
+    </ul>
+</div>
+
+<div class="p-4 bg-gray-100 rounded-lg">
+    <h2 class="text-lg font-semibold mb-4">Avtentikacija in avtorizacija:</h2>
+    <ul>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">POST</span>
+                <span class="mr-2">/api/login</span>
+                <span>Uporabnik se prijavi v aplikacijo.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">POST</span>
+                <span class="mr-2">/api/logout</span>
+                <span>Uporabnik se odjavi iz aplikacije.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">POST</span>
+                <span class="mr-2">/api/register</span>
+                <span>Uporabnik se registrira v aplikacijo.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/user</span>
+                <span>Pridobi podatke o trenutno prijavljenem uporabniku.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">PUT</span>
+                <span class="mr-2">/api/user/:id</span>
+                <span>Posodobi podatke o uporabniku.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">DELETE</span>
+                <span class="mr-2">/api/user/:id</span>
+                <span>Izbriše uporabnika.</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="p-4 bg-gray-100 rounded-lg">
+    <h2 class="text-lg font-semibold mb-4">Podatki o radarjih:</h2>
+    <ul>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/radars</span>
+                <span>Pridobi seznam radarjev.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/radars/:id</span>
+                <span>Pridobi podrobnosti o določenem radarju.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">POST</span>
+                <span class="mr-2">/api/radars</span>
+                <span>Dodaj nov radar.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">PUT</span>
+                <span class="mr-2">/api/radars/:id</span>
+                <span>Posodobi podatke o radarju.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">DELETE</span>
+                <span class="mr-2">/api/radars/:id</span>
+                <span>Izbriše radar.</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="p-4 bg-gray-100 rounded-lg">
+    <h2 class="text-lg font-semibold mb-4">Uporabniški prispevki:</h2>
+    <ul>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/user_contributions</span>
+                <span>Pridobi seznam uporabniških prispevkov.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/user_contributions/:id</span>
+                <span>Pridobi podrobnosti o določenem uporabniškem prispevku.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">POST</span>
+                <span class="mr-2">/api/user_contributions</span>
+                <span>Dodaj nov uporabniški prispevek.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">PUT</span>
+                <span class="mr-2">/api/user_contributions/:id</span>
+                <span>Posodobi podatke o uporabniškem prispevku.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">DELETE</span>
+                <span class="mr-2">/api/user_contributions/:id</span>
+                <span>Izbriše uporabniški prispevek.</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="p-4 bg-gray-100 rounded-lg">
+    <h2 class="text-lg font-semibold mb-4">Iskanje:</h2>
+    <ul>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/search?q=...</span>
+                <span>Iskanje po podatkih v aplikaciji (npr. iskanje policijskih kontrol ali radarjev po lokaciji ali vrsti).</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+</body>
+</html>
