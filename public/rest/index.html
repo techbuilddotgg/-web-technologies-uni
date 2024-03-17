@@ -51,90 +51,47 @@
 </div>
 
 
-
 <div class="p-4 bg-gray-100 rounded-lg">
-    <h2 class="text-lg font-semibold mb-4">Avtentikacija in avtorizacija:</h2>
-    <ul>
-        <li>
-            <span class="font-semibold">POST</span>
-            <span class="mr-2">/api/login</span>
-            <span>Uporabnik se prijavi v aplikacijo.</span>
-        </li>
-        <li>
-            <span class="font-semibold">POST</span>
-            <span class="mr-2">/api/logout</span>
-            <span>Uporabnik se odjavi iz aplikacije.</span>
-        </li>
-        <li>
-            <span class="font-semibold">POST</span>
-            <span class="mr-2">/api/register</span>
-            <span>Uporabnik se registrira v aplikacijo.</span>
-        </li>
-        <li>
-            <span class="font-semibold">GET</span>
-            <span class="mr-2">/api/user</span>
-            <span>Pridobi podatke o trenutno prijavljenem uporabniku.</span>
-        </li>
-        <li>
-            <span class="font-semibold">PUT</span>
-            <span class="mr-2">/api/user/:id</span>
-            <span>Posodobi podatke o uporabniku.</span>
-        </li>
-        <li>
-            <span class="font-semibold">DELETE</span>
-            <span class="mr-2">/api/user/:id</span>
-            <span>Izbriše uporabnika.</span>
-        </li>
-    </ul>
-</div>
-
-<div class="p-4 bg-gray-100 rounded-lg">
-    <h2 class="text-lg font-semibold mb-4">Avtentikacija in avtorizacija:</h2>
+    <h2 class="text-lg font-semibold mb-4">Podatki o policijskih kontrolah:</h2>
     <ul>
         <li>
             <div class="flex items-center">
-                <span class="font-semibold mr-2">POST</span>
-                <span class="mr-2">/api/login</span>
-                <span>Uporabnik se prijavi v aplikacijo.</span>
-            </div>
-        </li>
-        <li>
-            <div class="flex items-center">
-                <span class="font-semibold mr-2">POST</span>
-                <span class="mr-2">/api/logout</span>
-                <span>Uporabnik se odjavi iz aplikacije.</span>
-            </div>
-        </li>
-        <li>
-            <div class="flex items-center">
-                <span class="font-semibold mr-2">POST</span>
-                <span class="mr-2">/api/register</span>
-                <span>Uporabnik se registrira v aplikacijo.</span>
+                <span class="font-semibold mr-2">GET</span>
+                <span class="mr-2">/api/police_checks</span>
+                <span>Pridobi seznam policijskih kontrol.</span>
             </div>
         </li>
         <li>
             <div class="flex items-center">
                 <span class="font-semibold mr-2">GET</span>
-                <span class="mr-2">/api/user</span>
-                <span>Pridobi podatke o trenutno prijavljenem uporabniku.</span>
+                <span class="mr-2">/api/police_checks/:id</span>
+                <span>Pridobi podrobnosti o določeni policijski kontroli.</span>
+            </div>
+        </li>
+        <li>
+            <div class="flex items-center">
+                <span class="font-semibold mr-2">POST</span>
+                <span class="mr-2">/api/police_checks</span>
+                <span>Dodaj novo policijsko kontrolo.</span>
             </div>
         </li>
         <li>
             <div class="flex items-center">
                 <span class="font-semibold mr-2">PUT</span>
-                <span class="mr-2">/api/user/:id</span>
-                <span>Posodobi podatke o uporabniku.</span>
+                <span class="mr-2">/api/police_checks/:id</span>
+                <span>Posodobi podatke o policijski kontroli.</span>
             </div>
         </li>
         <li>
             <div class="flex items-center">
                 <span class="font-semibold mr-2">DELETE</span>
-                <span class="mr-2">/api/user/:id</span>
-                <span>Izbriše uporabnika.</span>
+                <span class="mr-2">/api/police_checks/:id</span>
+                <span>Izbriše policijsko kontrolo.</span>
             </div>
         </li>
     </ul>
 </div>
+
 
 <div class="p-4 bg-gray-100 rounded-lg">
     <h2 class="text-lg font-semibold mb-4">Podatki o radarjih:</h2>
@@ -230,7 +187,6 @@
         </li>
     </ul>
 </div>
-
 
 
 </body>
