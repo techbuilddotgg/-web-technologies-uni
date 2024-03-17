@@ -46,6 +46,44 @@ const server = http.createServer((req, res) => {
         });
     }
 
+    if (requestUrl === "/funkcionalnost-odjemalca") {
+        fs.readFile("public/funkcionalnost-odjemalca/index.html", (err, data) => {
+            if (err) {
+                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.end("Failed to load HTML file.");
+                return;
+            }
+
+            res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(data);
+        });
+    }
+
+    if (requestUrl === "/useCase.png") {
+        fs.readFile("public/funkcionalnost-odjemalca/useCase.png", (err, data) => {
+            if (err) {
+                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.end("Failed to load image file.");
+                return;
+            }
+
+            res.writeHead(200, {"Content-Type": "image/png"});
+            res.end(data);
+        });
+    }
+
+    if (requestUrl === "/posebnosti") {
+        fs.readFile("public/posebnosti/index.html", (err, data) => {
+            if (err) {
+                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.end("Failed to load HTML file.");
+                return;
+            }
+
+            res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(data);
+        });
+    }
 
 });
 server.listen(PORT, () => {
