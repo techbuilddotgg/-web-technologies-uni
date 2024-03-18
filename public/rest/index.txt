@@ -1,1 +1,34 @@
 REST
+
+Avtentikacija in avtorizacija:
+
+POST /api/login: Uporabnik se prijavi v aplikacijo.
+POST /api/logout: Uporabnik se odjavi iz aplikacije.
+POST /api/register: Uporabnik se registrira v aplikacijo.
+GET /api/user: Pridobi podatke o trenutno prijavljenem uporabniku.
+PUT /api/user/:id: Posodobi podatke o uporabniku.
+DELETE /api/user/:id: Izbriše uporabnika.
+Podatki o policijskih kontrolah:
+
+GET /api/police_checks: Pridobi seznam policijskih kontrol.
+GET /api/police_checks/:id: Pridobi podrobnosti o določeni policijski kontroli.
+POST /api/police_checks: Dodaj novo policijsko kontrolo.
+PUT /api/police_checks/:id: Posodobi podatke o policijski kontroli.
+DELETE /api/police_checks/:id: Izbriše policijsko kontrolo.
+Podatki o radarjih:
+
+GET /api/radars: Pridobi seznam radarjev.
+GET /api/radars/:id: Pridobi podrobnosti o določenem radarju.
+POST /api/radars: Dodaj nov radar.
+PUT /api/radars/:id: Posodobi podatke o radarju.
+DELETE /api/radars/:id: Izbriše radar.
+Uporabniški prispevki:
+
+GET /api/user_contributions: Pridobi seznam uporabniških prispevkov.
+GET /api/user_contributions/:id: Pridobi podrobnosti o določenem uporabniškem prispevku.
+POST /api/user_contributions: Dodaj nov uporabniški prispevek.
+PUT /api/user_contributions/:id: Posodobi podatke o uporabniškem prispevku.
+DELETE /api/user_contributions/:id: Izbriše uporabniški prispevek.
+Iskanje:
+
+GET /api/search?q=...: Iskanje po podatkih v aplikaciji (npr. iskanje policijskih kontrol ali radarjev po lokaciji ali vrsti).
