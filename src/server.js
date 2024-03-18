@@ -34,14 +34,14 @@ const server = http.createServer((req, res) => {
     }
 
     if (requestUrl === "/rest") {
-        fs.readFile("public/rest/index.html", (err, data) => {
+        fs.readFile("public/rest/index.txt", "utf8",(err, data) => {
             if (err) {
                 res.writeHead(500, {"Content-Type": "text/plain"});
-                res.end("Failed to load HTML file.");
+                res.end("Failed to load text file.");
                 return;
             }
 
-            res.writeHead(200, {"Content-Type": "text/html"});
+            res.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
             res.end(data);
         });
     }
@@ -73,14 +73,14 @@ const server = http.createServer((req, res) => {
     }
 
     if (requestUrl === "/posebnosti") {
-        fs.readFile("public/posebnosti/index.html", (err, data) => {
+        fs.readFile("public/posebnosti/index.txt", "utf8", (err, data) => {
             if (err) {
                 res.writeHead(500, {"Content-Type": "text/plain"});
-                res.end("Failed to load HTML file.");
+                res.end("Failed to load text file.");
                 return;
             }
 
-            res.writeHead(200, {"Content-Type": "text/html"});
+            res.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
             res.end(data);
         });
     }
@@ -106,7 +106,7 @@ const server = http.createServer((req, res) => {
                 return;
             }
 
-            res.writeHead(200, {"Content-Type": "text/html"});
+            res.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
             res.end(data);
         });
     }
