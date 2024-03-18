@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Posebnosti</title>
+</head>
+<body class="flex flex-col gap-4 px-24 py-4">
+<h1 class="text-3xl font-bold underline">Tehnične zahteve implementacije strežnika</h1>
+
+<p>Za implementacijo navedenih funkcionalnosti na strežniku bodo potrebne posebne tehnične rešitve za zagotavljanje učinkovitega delovanja in varnosti sistema:</p>
+
+<ul class="list-disc">
+    <li><b>Shranjevanje podatkov:</b> <br/>
+        Strežnik bo moral imeti učinkovito bazo podatkov, ki omogoča shranjevanje informacij o policijskih kontrolah, radarjih in uporabniških prispevkih ter omogoča hitro iskanje in dostop do teh podatkov. Priporočljivo je uporabiti zanesljivo relacijsko ali nerelacijsko bazo podatkov, kot je MySQL, PostgreSQL ali MongoDB, ki omogoča učinkovito upravljanje podatkov.</li>
+    <li><b>Obdelava zahtevkov uporabnikov:</b> <br/>
+        Strežnik mora biti zmogljiv za obdelavo zahtevkov uporabnikov, ki omogoča hitro odzivnost in pravilno izvedbo zahtevanih operacij, kot so poizvedbe v bazi podatkov in generiranje odgovorov.</li>
+    <li><b>Upravljanje dostopa:</b> <br/>
+        Za zagotavljanje varnosti podatkov bo treba implementirati mehanizme za upravljanje dostopa, ki omogočajo dodeljevanje uporabniških pravic in avtentikacijo uporabnikov ter preprečujejo nepooblaščen dostop do podatkov. Uporaba avtentikacije z JWT (JSON Web Tokens) in uporabniških pravic na ravni strežnika lahko zagotovi varno upravljanje dostopa do informacij.</li>
+    <li><b>Personalizacija vsebin:</b> <br/>
+        Strežnik mora imeti mehanizme za prilagajanje vsebin uporabnikom na podlagi njihovih preferenc in zgodovine interakcije z aplikacijo, kar vključuje shranjevanje in upravljanje uporabniških profilov. Uporaba tehnologij, kot so piškotki, lahko omogoči sledenje uporabniškim preferencam in personalizacijo vsebin na podlagi teh informacij.</li>
+</ul>
+
+<p>Za izvedbo teh tehničnih zahtev je priporočljivo uporabiti robustne in preverjene tehnologije ter dobro načrtovati arhitekturo strežnika, ki zagotavlja stabilnost, varnost in skalabilnost sistema. Primeri so Express.js, MongoDB, JWT, cookies, OAuth2...</p>
+
+</body>
+</html>

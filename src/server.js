@@ -1,7 +1,7 @@
 import * as http from "http";
 import * as fs from "fs";
 
-const PORT = 3000;
+const PORT = 3001;
 
 const server = http.createServer((req, res) => {
 
@@ -81,6 +81,45 @@ const server = http.createServer((req, res) => {
             }
 
             res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(data);
+        });
+    }
+
+    if (requestUrl === "/funkcionalnosti-streznika") {
+        fs.readFile("public/funkcionalnosti-streznika/index.html", (err, data) => {
+            if (err) {
+                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.end("Failed to load HTML file.");
+                return;
+            }
+
+            res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(data);
+        });
+    }
+
+    if (requestUrl === "/posebnosti-steznika") {
+        fs.readFile("public/posebnosti-streznika/tekst.txt", "utf8", (err, data) => {
+            if (err) {
+                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.end("Failed to load text file.");
+                return;
+            }
+
+            res.writeHead(200, {"Content-Type": "text/html"});
+            res.end(data);
+        });
+    }
+
+    if (requestUrl === "/useCase2.png") {
+        fs.readFile("public/funkcionalnosti-streznika/useCase2.png", (err, data) => {
+            if (err) {
+                res.writeHead(500, {"Content-Type": "text/plain"});
+                res.end("Failed to load image file.");
+                return;
+            }
+
+            res.writeHead(200, {"Content-Type": "image/png"});
             res.end(data);
         });
     }

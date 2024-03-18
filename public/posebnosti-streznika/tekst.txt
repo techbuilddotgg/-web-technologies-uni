@@ -1,0 +1,14 @@
+Tehnicne zahteve za implementacijo streznika aplikacije:
+
+Za implementacijo navedenih funkcionalnosti na strezniku bodo potrebne posebne tehnicne resitve za zagotavljanje ucinkovitega delovanja in varnosti sistema:
+
+- Shranjevanje podatkov:
+  Streznik bo moral imeti ucinkovito bazo podatkov, ki omogoca shranjevanje informacij o policijskih kontrolah, radarjih in uporabniskih prispevkih ter omogoca hitro iskanje in dostop do teh podatkov. Priporocljivo je uporabiti zanesljivo relacijsko ali nerelacijsko bazo podatkov, kot je MySQL, PostgreSQL ali MongoDB, ki omogoca ucinkovito upravljanje podatkov.
+- Obdelava zahtevkov uporabnikov:
+  Streznik mora biti zmogljiv za obdelavo zahtevkov uporabnikov, ki omogoca hitro odzivnost in pravilno izvedbo zahtevanih operacij, kot so poizvedbe v bazi podatkov in generiranje odgovorov.
+- Upravljanje dostopa:
+  Za zagotavljanje varnosti podatkov bo treba implementirati mehanizme za upravljanje dostopa, ki omogocajo dodeljevanje uporabniskih pravic in avtentikacijo uporabnikov ter preprecujejo nepooblasten dostop do podatkov. Uporaba avtentikacije z JWT (JSON Web Tokens) in uporabniskih pravic na ravni streznika lahko zagotovi varno upravljanje dostopa do informacij.
+- Personalizacija vsebin:
+  Streznik mora imeti mehanizme za prilagajanje vsebin uporabnikom na podlagi njihovih preferenc in zgodovine interakcije z aplikacijo, kar vkljucuje shranjevanje in upravljanje uporabniskih profilov. Uporaba tehnologij, kot so piskotki, lahko omogoci sledenje uporabniskim preferencam in personalizacijo vsebin na podlagi teh informacij.
+
+Za izvedbo teh tehnicnih zahtev je priporocljivo uporabiti robustne in preverjene tehnologije ter dobro načrtovati arhitekturo streznika, ki zagotavlja stabilnost, varnost in skalabilnost sistema. Primeri so Express.js, MongoDB, JWT, cookies, OAuth2...
